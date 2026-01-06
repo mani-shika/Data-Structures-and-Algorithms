@@ -1,6 +1,6 @@
 public class largest{
   public static void main(string[]args)
-  scanner in = new scanner(system.in);
+  Scanner in = new Scanner(System.in);
     int a = in.nextTnt();
     int b = in.nextInt();
     int c = in.nextInt();
@@ -12,5 +12,5 @@ public class largest{
      if (c > max){
        max = c;
      }
-     system.out.println(max);
+     System.out.println(max);
 }
