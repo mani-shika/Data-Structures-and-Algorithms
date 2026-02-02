@@ -1,0 +1,18 @@
+class Solution {
+    public static int reverse(int x) {
+        
+        long reversed = 0;
+        while(x!=0){
+            int lastdigit = x % 10;
+
+            reversed = (reversed*10)+lastdigit;
+
+            x = x/10;
+        }
+        if (reversed > Integer.MAX_VALUE || reversed < Integer.MIN_VALUE) {
+            return 0; 
+        }
+        return (int)reversed;
+    }
+    
+}
